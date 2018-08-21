@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!-- ScalableLayout으로 기종이 달라도 위치에 맞게 배치해줌 -->
+
+    <!-- 설문지에 쓸 질문 , 버튼 생성 -->
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        sl:scale_base_width="1600"
+        sl:scale_base_height="800">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/test_Question_Text"
+            sl:scale_textsize="70"
+            sl:scale_width="1200"
+            sl:scale_height="200"
+            sl:scale_top="100"
+            sl:scale_left="200"/>
+
+        <SeekBar
+            android:id="@+id/test_SeekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bar"
+            android:max="100"
+            android:progress="0"
+            android:secondaryProgress="0"
+            android:progressDrawable="@drawable/progress_horizontal_custom"
+            android:thumb="@drawable/seek_thumb_custom"
+            sl:scale_width="1200"
+            sl:scale_height="240"
+            sl:scale_top="420"
+            sl:scale_left="200" />
+
+
+        <ImageView
+            android:id="@+id/test_Next_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/next_bt"
+            sl:scale_width="160"
+            sl:scale_height="80"
+            sl:scale_left="1400"
+            sl:scale_top="700" />
+
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+
+</RelativeLayout>

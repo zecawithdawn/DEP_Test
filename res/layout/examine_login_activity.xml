@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <!-- ScalableLayout으로 기종이 달라도 위치에 맞게 배치해줌 -->
+
+    <!-- 이미지 생성 -->
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ex_login_bg"
+        sl:scale_base_width="1400"
+        sl:scale_base_height="730">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ex_login_logo"
+            sl:scale_left="600"
+            sl:scale_top="100"
+            sl:scale_width="200"
+            sl:scale_height="120"
+            />
+
+        <EditText
+            android:id="@+id/login_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="ID"
+            android:textColorHint="#eeeeee"
+            sl:scale_textsize = "40"
+            sl:scale_left="400"
+            sl:scale_top="240"
+            sl:scale_width="600"
+            sl:scale_height="120"
+            />
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="PASSWORD"
+            android:textColorHint="#eeeeee"
+            sl:scale_textsize = "40"
+            sl:scale_left="400"
+            sl:scale_top="360"
+            sl:scale_width="600"
+            sl:scale_height="120"
+            />
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_btn"
+            android:background="@drawable/ex_login_bt"
+            sl:scale_left="440"
+            sl:scale_top="510"
+            sl:scale_width="220"
+            sl:scale_height="120"/>
+
+        <Button
+            android:id="@+id/register_btn"
+            android:background="@drawable/ex_register_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            sl:scale_textsize = "40"
+            sl:scale_left="740"
+            sl:scale_top="510"
+            sl:scale_width="220"
+            sl:scale_height="120"/>
+
+
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="start_new">New</string>
+    <string name="brush">Brush</string>
+    <string name="erase">Erase</string>
+    <string name="save">Save</string>
+    <string name="paint">Paint</string>
+    <string name="sml1">Small</string>
+    <string name="sml2">Small</string>
+    <string name="med1">Medium</string>
+    <string name="med2">Medium</string>
+    <string name="lrg1">Large</string>
+    <string name="lrg2">Large</string>
+</resources>

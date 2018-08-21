@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/introimageView"
+        android:scaleType="fitXY"/>
+    <!-- ScalableLayout으로 기종이 달라도 위치에 맞게 배치해줌 -->
+    <!-- 이미지 생성 -->
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        sl:scale_base_width="1400"
+        sl:scale_base_height="730">
+
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+</RelativeLayout>

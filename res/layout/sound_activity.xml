@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- ScalableLayout으로 기종이 달라도 위치에 맞게 배치해줌 -->
+    <!-- 사운드 버튼 생성 -->
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        sl:scale_base_height="730"
+        sl:scale_base_width="1400">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            sl:scale_height="730"
+            sl:scale_left="0"
+            sl:scale_textsize="50"
+            sl:scale_top="0"
+            sl:scale_width="200" />
+
+        <ImageView
+            android:id="@+id/sound_shine"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            sl:scale_height="730"
+            sl:scale_left="200"
+            sl:scale_textsize="50"
+            sl:scale_top="0"
+            sl:scale_width="240" />
+
+        <ImageView
+            android:id="@+id/sound_natural"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            sl:scale_height="730"
+            sl:scale_left="440"
+            sl:scale_textsize="50"
+            sl:scale_top="0"
+            sl:scale_width="240" />
+
+        <ImageView
+            android:id="@+id/sound_bird"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            sl:scale_height="730"
+            sl:scale_left="680"
+            sl:scale_textsize="50"
+            sl:scale_top="0"
+            sl:scale_width="240" />
+
+        <ImageView
+            android:id="@+id/sound_sea"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            sl:scale_height="730"
+            sl:scale_left="920"
+            sl:scale_textsize="50"
+            sl:scale_top="0"
+            sl:scale_width="240" />
+
+        <ImageView
+            android:id="@+id/sound_rain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            sl:scale_height="730"
+            sl:scale_left="1160"
+            sl:scale_textsize="50"
+            sl:scale_top="0"
+            sl:scale_width="240" />
+
+
+
+
+
+
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+
+
+</RelativeLayout>

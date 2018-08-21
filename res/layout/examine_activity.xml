@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/test_relayout"
+    android:background="#fcf4ec">
+    <!-- ScalableLayout으로 기종이 달라도 위치에 맞게 배치해줌 -->
+
+    <!-- 설문지에 쓸 질문 , 버튼 생성 -->
+
+</RelativeLayout>

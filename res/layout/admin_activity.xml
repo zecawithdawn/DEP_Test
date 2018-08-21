@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        sl:scale_base_width="1200"
+        sl:scale_base_height="720">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/admin_result_buuton"
+            android:background="@drawable/admin_result_bt"
+            sl:scale_textsize="30"
+            sl:scale_left="280"
+            sl:scale_top="200"
+            sl:scale_width="240"
+            sl:scale_height="240"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="설문조사 결과"
+            sl:scale_textsize="40"
+            sl:scale_left="300"
+            sl:scale_top="480"
+            sl:scale_width="300"
+            sl:scale_height="60" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/admin_setting_button"
+            android:background="@drawable/admin_setting_bt"
+            sl:scale_textsize="30"
+            sl:scale_left="680"
+            sl:scale_top="200"
+            sl:scale_width="240"
+            sl:scale_height="240"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="설문조사 설정"
+            sl:scale_textsize="40"
+            sl:scale_left="700"
+            sl:scale_top="480"
+            sl:scale_width="300"
+            sl:scale_height="60" />
+
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+
+</RelativeLayout>

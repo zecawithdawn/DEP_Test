@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!-- ScalableLayout으로 기종이 달라도 위치에 맞게 배치해줌 -->
+
+    <!-- 이미지 생성 -->
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        sl:scale_base_width="1400"
+        sl:scale_base_height="700">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/admin_setting_text"
+            android:gravity="center"
+            sl:scale_textsize="50"
+            sl:scale_left="200"
+            sl:scale_top="50"
+            sl:scale_width="1000"
+            sl:scale_height="150"/>
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            sl:scale_textsize="30"
+            sl:scale_left="100"
+            sl:scale_top="250"
+            sl:scale_width="1200"
+            sl:scale_height="400"/>
+
+
+
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+
+
+</RelativeLayout>

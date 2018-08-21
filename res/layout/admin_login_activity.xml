@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/ex_login_bg"
+    android:layout_height="match_parent">
+
+    <!-- ScalableLayout으로 기종이 달라도 위치에 맞게 배치해줌 -->
+
+    <!-- 이미지 생성 -->
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        sl:scale_base_width="1400"
+        sl:scale_base_height="730">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ex_login_logo"
+            sl:scale_left="615"
+            sl:scale_top="100"
+            sl:scale_width="200"
+            sl:scale_height="120"
+            />
+
+
+        <EditText
+            android:id="@+id/Alogin_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="  ID"
+            android:textColorHint="#eeeeee"
+            sl:scale_textsize = "40"
+            sl:scale_left="400"
+            sl:scale_top="220"
+            sl:scale_width="600"
+            sl:scale_height="120"
+            />
+
+        <EditText
+            android:id="@+id/Alogin_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="  PASSWORD"
+            android:textColorHint="#eeeeee"
+            sl:scale_textsize = "40"
+            sl:scale_left="400"
+            sl:scale_top="360"
+            sl:scale_width="600"
+            sl:scale_height="120"
+            />
+
+        <Button
+            android:id="@+id/Alogin_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ex_login_bt"
+            sl:scale_left="590"
+            sl:scale_top="500"
+            sl:scale_width="250"
+            sl:scale_height="120"/>
+
+
+
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/custom_dialog"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        sl:scale_base_width="1200"
+        sl:scale_base_height="800">
+
+    <TextView
+        android:text="이름"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        sl:scale_textsize = "50"
+        sl:scale_left="0"
+        sl:scale_top="15"
+        sl:scale_width="200"
+        sl:scale_height="120"/>
+
+    <EditText
+        android:id="@+id/custom_dialog_name"
+        android:hint="이름을 입력해주세요"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        sl:scale_textsize = "50"
+        sl:scale_left="200"
+        sl:scale_top="15"
+        sl:scale_width="800"
+        sl:scale_height="120"/>
+
+    <TextView
+        android:text="아이디"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        sl:scale_textsize = "50"
+        sl:scale_left="0"
+        sl:scale_top="165"
+        sl:scale_width="200"
+        sl:scale_height="120"
+        />
+    <EditText
+        android:id="@+id/custom_dialog_id"
+        android:hint="이메일 형태로 입력해주세요"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        sl:scale_textsize = "50"
+        sl:scale_left="200"
+        sl:scale_top="165"
+        sl:scale_width="800"
+        sl:scale_height="120"/>
+
+    <TextView
+        android:text="비밀번호"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        sl:scale_textsize = "50"
+        sl:scale_left="0"
+        sl:scale_top="315"
+        sl:scale_width="200"
+        sl:scale_height="120"/>
+    <EditText
+        android:id="@+id/custom_dialog_pw"
+        android:hint="비밀번호를 입력해주세요"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        sl:scale_textsize = "50"
+        sl:scale_left="200"
+        sl:scale_top="315"
+        sl:scale_width="800"
+        sl:scale_height="120"/>
+    <TextView
+        android:text="비밀번호 재확인"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        sl:scale_textsize = "50"
+        sl:scale_left="0"
+        sl:scale_top="465"
+        sl:scale_width="200"
+        sl:scale_height="120"/>
+    <EditText
+        android:id="@+id/custom_dialog_rpw"
+        android:hint="비밀번호를 한번더 입력해주세요"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        sl:scale_textsize = "50"
+        sl:scale_left="200"
+        sl:scale_top="465"
+        sl:scale_width="800"
+        sl:scale_height="120"/>
+
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+
+
+</RelativeLayout>
